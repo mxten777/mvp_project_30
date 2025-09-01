@@ -55,6 +55,12 @@ export default function ReportPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+      <div className="w-full max-w-md mb-4">
+        <button onClick={() => window.location.href = '/'} className="flex items-center gap-1 px-4 py-2 bg-emerald-600 text-white rounded shadow hover:bg-emerald-700 transition font-semibold">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+          홈으로
+        </button>
+      </div>
       <h2 className="text-2xl font-bold mb-4">제보 등록</h2>
       <form className="w-full max-w-md bg-white p-6 rounded shadow" onSubmit={handleSubmit}>
         <label className="block mb-2 font-semibold">설명</label>

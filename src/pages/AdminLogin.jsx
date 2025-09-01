@@ -36,6 +36,13 @@ export default function AdminLogin({ onLogin }) {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+      <button
+        type="button"
+        onClick={() => navigate("/")}
+        className="mb-6 px-4 py-2 bg-emerald-600 text-white rounded shadow hover:bg-emerald-700 transition w-full max-w-sm font-semibold"
+      >
+        홈으로
+      </button>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow w-full max-w-sm">
         <h2 className="text-2xl font-bold mb-4">관리자 로그인</h2>
         <input

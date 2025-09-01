@@ -88,7 +88,12 @@ export default function ReportsList() {
             엑셀(CSV) 다운로드
           </button>
         </div>
-        <Link to="/" className="text-blue-600 underline mb-4 inline-block">← 메인으로</Link>
+        <Link to="/" className="mb-4 inline-block">
+          <button className="flex items-center gap-1 px-4 py-2 bg-emerald-600 text-white rounded shadow hover:bg-emerald-700 transition font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+            홈으로
+          </button>
+        </Link>
         <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
           <div className="flex gap-2">
             <button onClick={() => setFilter("all")}
